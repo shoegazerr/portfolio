@@ -16,7 +16,7 @@ function Header() {
              spacing ="200px" p={isNotSmallerScreen ? "32" : "0"}
              alignSelf="flex-start">
       <Box mt={isNotSmallerScreen ? "0" :16} align="flex-start">
-         <Text fontSize="5x1" fontWeight="semibold" >Hello, my name is</Text>
+         <Text fontSize="5x1" fontWeight="semibold" >Hi, my name is</Text>
          <Text fontSize="7x1" fontWeight="bold" bgGradient="linear(to-r, white, peachpuff, pink)" bgClip="text">Portnova Tatiana</Text>
       </Box>
      
