@@ -17,7 +17,7 @@ function Header() {
              alignSelf="flex-start">
       <Box mt={isNotSmallerScreen ? "0" :16} align="flex-start">
          <Text fontSize="5x1" fontWeight="semibold" >Hi, my name is</Text>
-         <Text fontSize="7x1" fontWeight="bold" bgGradient="linear(to-r, white, peachpuff, pink)" bgClip="text">Portnova Tatiana</Text>
+         <Text fontSize="7x1" fontWeight="bold" bgGradient={isDark ? "linear(to-r, white, peachpuff, pink)" : "linear(to-r, darkblue, blue, cyan)"} bgClip="text">Shoegazer</Text>
       </Box>
      
 

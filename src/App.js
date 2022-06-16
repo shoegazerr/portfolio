@@ -15,7 +15,7 @@ const isDark = colorMode === "dark";
     <VStack p={5}>
       <Flex w="100%">
         <Heading
-          ml="8" size="md" fontWeight="semibold" color="peachpuff">hello</Heading>
+          ml="8" size="md" fontWeight="semibold" color={isDark ? "peachpuff": "blue"}>hello</Heading>
         <Spacer></Spacer>
         <IconButton ml={2} icon={<FaGithub/>} isRound="true" onClick={toggleColorMode}></IconButton>
         <IconButton ml={2} icon={<FaVk/>} isRound="true" onClick={toggleColorMode}></IconButton>
