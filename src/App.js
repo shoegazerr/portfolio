@@ -9,7 +9,7 @@ import Profile from './components/Profile'
 function App() {
 
 const {colorMode, toggleColorMode} = useColorMode();
-const isDark = colorMode == "dark";
+const isDark = colorMode === "dark";
 
   return (
     <VStack p={5}>
