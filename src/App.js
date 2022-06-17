@@ -20,9 +20,12 @@ const {isNotSmallerScreen} = useMediaQuery("(min-wigth:600px)");
         <Heading
           ml="8" size="md" fontWeight="semibold" color={isDark ? "peachpuff": "blue"}>hello</Heading>
         <Spacer></Spacer>
-        <IconButton ml={2} icon={<FaGithub/>} isRound="true" onClick={toggleColorMode}></IconButton>
-        <IconButton ml={2} icon={<FaVk/>} isRound="true" onClick={toggleColorMode}></IconButton>
-        <IconButton ml={2} icon={<FaTelegram/>} isRound="true" onClick={toggleColorMode}></IconButton>
+        <IconButton ml={2} icon={<FaGithub/>} isRound="true" on click={() =>
+              window.open("https://github.com/shoegazerr")}></IconButton>
+        <IconButton ml={2} icon={<FaVk/>} isRound="true" on click={() =>
+              window.open("")}></IconButton>
+        <IconButton ml={2} icon={<FaTelegram/>} isRound="true" on click={() =>
+              window.open("")}></IconButton>
         <IconButton ml={8} icon={isDark ? <FaSun/>: <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
       </Flex>
       <Header></Header>
