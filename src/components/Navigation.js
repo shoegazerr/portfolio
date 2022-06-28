@@ -12,6 +12,7 @@ const isDark = colorMode === "dark";
     <Box
     position="fixed"
     as="nav"
+    css={{ backdropFilter: 'blur(10px)' }}
     w="100%"
     zIndex={1}
   >
@@ -37,8 +38,8 @@ const isDark = colorMode === "dark";
         <Link href="/" color={isDark ? "peachpuff": "blue"}>
             hello
         </Link>
-        <Link href="/works" color={isDark ? "white": "black"}>
-          Works
+        <Link href="/contacts" color={isDark ? "white": "black"}>
+          Contacts
         </Link>
         <Link href="/posts" color={isDark ? "white": "black"}>
           Posts
@@ -69,8 +70,8 @@ const isDark = colorMode === "dark";
               <Link href="/" passHref>
                 <MenuItem as={Link}>About</MenuItem>
               </Link>
-              <Link href="/works" passHref>
-                <MenuItem as={Link}>Works</MenuItem>
+              <Link href="/contacts" passHref>
+                <MenuItem as={Link}>Contacts</MenuItem>
               </Link>
               <Link href="/posts" passHref>
                 <MenuItem as={Link}>Posts</MenuItem>
