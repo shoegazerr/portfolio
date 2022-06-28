@@ -6,7 +6,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Grid, GridItem } from '@chakra-ui/react'
 import Section from './Section'
 import { Image } from '@chakra-ui/react'
-import { IGEmbed } from 'react-ig-embed';
+import { InstagramEmbed } from 'react-social-media-embed'
 
 function Profile() {
   const{colorMode} = useColorMode();
@@ -31,10 +31,22 @@ function Profile() {
     <Section delay={1.0}>
     <Box p={4} display={{ md: 'flex' }}>
   <Box flexShrink={0}>
-  <IGEmbed url="https://www.instagram.com/p/BoBfnNghWQg/" />
+  <InstagramEmbed url="https://www.instagram.com/p/BoBfnNghWQg/" width={350}/>
   </Box>
-  <Box alignSelf='right' mt={{ base: 4, md: 0 }} ml={{ md: 20 }}>
-  <IGEmbed url="https://www.instagram.com/p/Bp6dDYHheei/" />
+  <Box mt={{ base: 4, md: 0 }} ml={{ md: 10 }}>
+  <InstagramEmbed url="https://www.instagram.com/p/Bp6dDYHheei/" width={350}/>
+    </Box>
+    </Box>
+    </Section>
+    <Section delay={1.5}>
+    <Box p={4} display={{ md: 'flex' }}>
+    <Box flexShrink={0}>
+    <iframe border='0' width='350px' height='442px' src="https://bandcamp.com/EmbeddedPlayer/track=1932597714/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/" seamless>
+      <a href="https://shoegazer.bandcamp.com/track/warm-reflection">warm reflection by shoegazer</a></iframe>
+    </Box>
+    <Box mt={{ base: 4, md: 0 }} ml={{ md: 10 }}>
+    <iframe border='0' width='350px' height='442px' src="https://bandcamp.com/EmbeddedPlayer/album=1642266900/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless>
+      <a href="https://shoegazer.bandcamp.com/album/untitled">untitled by shoegazer</a></iframe>
     </Box>
     </Box>
     </Section>
